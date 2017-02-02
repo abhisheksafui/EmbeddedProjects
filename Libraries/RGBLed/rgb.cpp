@@ -208,9 +208,9 @@ void RGB::fsm(){
 	 * The pwm value for this step has been calculated by now.
 	 * Set the pwm for this step
 	 */
-	pwmWrite(red_pin,(tmp_r/255.0)*PWM_MAX/2);
-	pwmWrite(blue_pin,(tmp_b/255.0)*PWM_MAX/2);
-	pwmWrite(green_pin,(tmp_g/255.0)*PWM_MAX/2);
+	pwmWrite(red_pin,(tmp_r/255.0)*PWM_MAX);
+	pwmWrite(blue_pin,(tmp_b/255.0)*PWM_MAX);
+	pwmWrite(green_pin,(tmp_g/255.0)*PWM_MAX);
 
 
 
